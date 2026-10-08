@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Event Registration</title>
+
+```
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f4f7fb;
+        color: #263238;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 850px;
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+    }
+
+    .header {
+        background: #263f73;
+        color: white;
+        text-align: center;
+        padding: 35px 25px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .header p {
+        font-size: 15px;
+        opacity: 0.9;
+        line-height: 1.6;
+    }
+
+    .content {
+        padding: 35px;
+    }
+
+    .event-info {
+        background: #eef3fb;
+        border-left: 5px solid #3f63a5;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+    }
+
+    .event-info h2 {
+        color: #263f73;
+        margin-bottom: 8px;
+        font-size: 21px;
+    }
+
+    .event-info p {
+        color: #546e7a;
+        line-height: 1.6;
+        font-size: 14px;
+    }
+
+    .form-title {
+        color: #263f73;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .form-row {
+        display: flex;
+        gap: 20px;
+    }
+
+    .form-group {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 14px;
+        font-weight: bold;
+        color: #37474f;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid #cfd8dc;
+        border-radius: 7px;
+        font-size: 14px;
+        outline: none;
+        background: #fff;
+    }
+
+    input:focus,
+    select:focus {
+        border-color: #3f63a5;
+        box-shadow: 0 0 0 3px rgba(63, 99, 165, 0.1);
+    }
+
+    .register-btn {
+        width: 100%;
+        padding: 14px;
+        margin-top: 8px;
+        border: none;
+        border-radius: 7px;
+        background: #3f63a5;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .register-btn:hover {
+        background: #2f4f8c;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 18px;
+        background: #f8fafc;
+        color: #78909c;
+        font-size: 13px;
+    }
+
+    @media (max-width: 650px) {
+        .form-row {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        .header h1 {
+            font-size: 25px;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<div class="container">
+
+    <div class="header">
+        <h1>Student Event Registration</h1>
+        <p>Register now and be a part of our upcoming campus event.</p>
+    </div>
+
+    <div class="content">
+
+        <div class="event-info">
+            <h2>Tech Innovators 2026</h2>
+            <p>
+                Join us for an exciting student technology event featuring
+                innovation, ideas, and interactive sessions. Explore new
+                technologies and connect with fellow students.
+            </p>
+        </div>
+
+        <h2 class="form-title">Registration Details</h2>
+
+        <form>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Student Name</label>
+                    <input type="text" id="name"
+                           placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regno">Register Number</label>
+                    <input type="text" id="regno"
+                           placeholder="Enter register number" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" required>
+                        <option value="">Select Department</option>
+                        <option>Computer Science and Engineering</option>
+                        <option>Information Technology</option>
+                        <option>Software Engineering</option>
+                        <option>Electronics and Communication</option>
+                        <option>Electrical and Electronics</option>
+                        <option>Mechanical Engineering</option>
+                        <option>Civil Engineering</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email"
+                           placeholder="Enter your email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Event Date</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <button type="submit" class="register-btn">
+                Register for Event
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Student Event Registration | College Event Portal
+    </div>
+
+</div>
+```
+
+</body>
+</html>
